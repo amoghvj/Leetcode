@@ -1,0 +1,17 @@
+//C
+
+#include <string.h>
+char* longestCommonPrefix(char** strs, int strsSize) {
+    char prefix[200] = "hgkjfh";
+    for (int i = 0; i < 200; i++) {
+        int common = 1;
+        for(int j = 0; j < strsSize; j++) {
+            if(i >= strlen(strs[j]) || strs[j][i] != strs[0][i]) {
+                common = 0;
+                break;
+            }
+        }
+        if(common) prefix[i] = strs[0][i];
+    }
+    return *prefix;
+}
