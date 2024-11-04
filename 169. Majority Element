@@ -1,0 +1,22 @@
+//C
+
+int majorityElement(int* nums, int numsSize) {
+    int ret = nums[0];
+
+    for (int i = 1, frequency = 1; i < numsSize; i++) {
+        int current = nums[i];
+
+        frequency += (current == ret) ? 1 : -1;
+
+        if (frequency <= 0) {
+            ret = current;
+            frequency = 1;
+
+        }
+
+    }
+    
+    return ret;
+}
+
+// using morse voting algorithm
