@@ -1,5 +1,6 @@
 //C
 
+#include <stdio.h>
 char* replaceDigits(char s[]) {
     for(int i = 1; i < strlen(s); i+=2) s[i] = (char)(((int) s[i - 1]) + (int) (s[i] - '0'));
     return s;
