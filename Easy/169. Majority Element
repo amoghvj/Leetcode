@@ -1,5 +1,6 @@
 //C
 
+#include <stdio.h>
 int majorityElement(int* nums, int numsSize) {
     int ret = nums[0];
 
