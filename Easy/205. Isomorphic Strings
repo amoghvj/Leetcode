@@ -1,6 +1,5 @@
 //C
 
-#include <stdio.h>
 #include <stdbool.h>
 bool isIsomorphic(char* s, char* t) {
     char Ascii[128], Bscii[128];
