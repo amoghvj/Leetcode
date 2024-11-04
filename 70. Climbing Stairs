@@ -1,0 +1,9 @@
+//C
+
+int cache[46] = {1, 1};
+int climbStairs(int n) {
+    if(cache[n]) return cache[n];
+    int out = climbStairs(n - 1) + climbStairs(n - 2);
+    cache[n] = out;
+    return out;
+}
