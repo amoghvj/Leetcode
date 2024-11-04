@@ -1,0 +1,8 @@
+//C
+
+bool isHappy(int n) {
+    if(n < 7) return n == 1;
+    int s = 0;
+    for(; n != 0; s += ((n % 10) * (n % 10)), n /= 10);
+    return isHappy(s);
+}
