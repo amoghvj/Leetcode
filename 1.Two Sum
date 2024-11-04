@@ -1,0 +1,21 @@
+//Javascript
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function (nums, target) {
+    var cache = new Map(), numsLength = nums.length;
+
+    for (var i = 0; i < numsLength; i++) {
+        var firstNumber = nums[i];
+        var requiredNumber = target - firstNumber;
+
+        if(cache.has(firstNumber)) return [cache.get(firstNumber), i];
+
+        cache.set(requiredNumber, i);
+
+    }
+
+}
