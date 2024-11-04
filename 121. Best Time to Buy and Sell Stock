@@ -1,0 +1,10 @@
+//C
+
+int maxProfit(int* prices, int pricesSize) {
+    int min = 0, diff = 0;
+    for (int i = 1; i < pricesSize; i++) {
+        if(prices[i] < prices[min]) min = i;
+        else if(prices[i] - prices[min] >= diff) diff = prices[i] - prices[min];
+    }
+    return diff;
+}
