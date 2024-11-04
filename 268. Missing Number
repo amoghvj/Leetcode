@@ -1,7 +1,0 @@
-//C
-
-int missingNumber(int* nums, int numsSize) {
-    int reqSum = (numsSize * (numsSize + 1)) / 2, sum = 0;
-    for(int i = 0; i < numsSize; sum += nums[i], i++);
-    return reqSum - sum;
-}
