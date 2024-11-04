@@ -1,0 +1,7 @@
+//C
+
+int singleNumber(int* nums, int numsSize) {
+    int hash = 0;
+    for(int i = 0; i < numsSize; i++) hash ^= nums[i];
+    return hash;
+}
