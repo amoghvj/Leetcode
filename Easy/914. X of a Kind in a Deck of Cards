@@ -1,5 +1,6 @@
 //C
 
+#include <stdbool.h>
 bool hasGroupsSizeX(int* deck, int deckSize) {
     int cache[10001] = {0}, partition = 0;
     for (int i = 0; i < deckSize; i++)
