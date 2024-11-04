@@ -1,5 +1,6 @@
+//C
+
 /*Can take powers of 2: 2, 4, 8... in one int, then powers of 2 + 1 in next int until we reach 2 x (10^9)*/
-#include <stdio.h>
 #include <stdbool.h>
 bool containsDuplicate(int* nums, int numsSize) {
     int cache[200000002];
